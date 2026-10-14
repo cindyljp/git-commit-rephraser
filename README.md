@@ -74,6 +74,27 @@ For a simple change, the skill may return only a title or fewer bullet points. U
 
 Changes on GitHub do not automatically update a manually installed copy. Ask your agent to follow the installation instructions again, or replace your local `SKILL.md` with the latest version. Review any local customizations before replacing the file.
 
+## Uninstall
+
+Paste this into the agent where you installed the skill:
+
+```text
+Uninstall the git-commit-rephraser skill. Check the current project's
+.agents/skills/git-commit-rephraser directory and the personal
+~/.agents/skills/git-commit-rephraser directory in this environment.
+Also check ~/.codex/skills/git-commit-rephraser if a previous installer
+used that location.
+
+Remove only the installed git-commit-rephraser skill directory.
+If multiple copies exist, ask which copy to remove.
+Do not delete the source repository or other skills.
+Report the path removed.
+```
+
+To uninstall manually, delete the `git-commit-rephraser` folder from the skill directory where you installed it. For WSL, SSH, or a Dev Container, remove it in that same environment.
+
+Restart Codex or VS Code if the skill still appears in the selector. Uninstalling a local copy does not delete this GitHub repository.
+
 ## Contributing
 
 Open an issue to suggest an improvement, or submit a pull request with focused changes to the skill instructions.
