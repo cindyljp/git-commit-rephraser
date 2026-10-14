@@ -1,8 +1,8 @@
-# Git Commit Rephraser
+# ✍️ Git Commit Rephraser
 
 An instruction-only Agent Skill that turns verbose Git commit descriptions into concise, professional messages using Conventional Commits.
 
-## Features
+## ✨ Features
 
 - Use Conventional Commit types such as `feat:`, `fix:`, `refactor:`, `chore:`, `docs:`, and `perf:`.
 - Keep titles short, preferably under 72 characters.
@@ -12,7 +12,7 @@ An instruction-only Agent Skill that turns verbose Git commit descriptions into 
 
 The skill only rewrites messages. It does not execute Git commands, modify project files, or create commits.
 
-## Install with an agent
+## 🤖 Install with an agent
 
 Paste this into Codex in VS Code or another agent that supports Agent Skills:
 
@@ -24,7 +24,7 @@ The installation instructions download the skill into a supported skill director
 
 No Python, CLI package, or additional dependencies are required for this skill. The installing agent needs network access and permission to save the file.
 
-## Manual installation for Codex
+## 📦 Manual installation for Codex
 
 Copy [SKILL.md](skills/git-commit-rephraser/SKILL.md) to one of these locations:
 
@@ -37,7 +37,7 @@ If you use WSL, SSH, or a Dev Container, install the file in the environment whe
 
 If the skill does not appear after installation, restart Codex or VS Code.
 
-## Usage
+## 🚀 Usage
 
 In Codex, type `$git-commit-rephraser` and provide the commit description you want rewritten:
 
@@ -64,17 +64,17 @@ feat: enhance pending transfer management
 
 For a simple change, the skill may return only a title or fewer bullet points. Use the skill invocation supported by your agent when using a tool other than Codex.
 
-## Repository layout
+## 📁 Repository layout
 
 - [skills/git-commit-rephraser/SKILL.md](skills/git-commit-rephraser/SKILL.md): skill metadata and rewriting instructions.
 - [INSTALL-WITH-AN-AGENT.md](INSTALL-WITH-AN-AGENT.md): installation instructions for an agent.
 - [README.md](README.md): installation and usage guide.
 
-## Updating an installed copy
+## 🔄 Updating an installed copy
 
 Changes on GitHub do not automatically update a manually installed copy. Ask your agent to follow the installation instructions again, or replace your local `SKILL.md` with the latest version. Review any local customizations before replacing the file.
 
-## Uninstall
+## 🗑️ Uninstall
 
 Paste this into the agent where you installed the skill:
 
@@ -95,6 +95,6 @@ To uninstall manually, delete the `git-commit-rephraser` folder from the skill d
 
 Restart Codex or VS Code if the skill still appears in the selector. Uninstalling a local copy does not delete this GitHub repository.
 
-## Contributing
+## 🤝 Contributing
 
 Open an issue to suggest an improvement, or submit a pull request with focused changes to the skill instructions.
