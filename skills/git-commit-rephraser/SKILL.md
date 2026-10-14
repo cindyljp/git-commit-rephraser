@@ -5,33 +5,65 @@ description: Rephrase, shorten, and polish Git commit messages using Conventiona
 
 # Git Commit Rephraser
 
-Transform verbose Git commit descriptions into concise, professional messages while preserving the important changes.
+## Purpose
+
+Transform long or verbose Git commit messages into concise, clear, professional commit messages while preserving the important changes.
 
 ## Rules
 
-- Follow Conventional Commits: feat for new functionality, fix for bug fixes, refactor for restructuring, chore for maintenance, docs for documentation, and perf for performance improvements.
-- Keep the title short and descriptive, preferably under 72 characters.
-- Use imperative verbs such as add, implement, improve, refactor, or update.
-- Preserve existing scopes where appropriate, such as feat(assessment-history):.
-- Summarize related changes in 3–5 concise bullets when useful. Use fewer bullets or only a title for simple changes.
-- Group related changes instead of listing every file or component.
-- Preserve functionality, business logic, and significant technical details.
-- Do not invent changes or repeat the title in the bullets.
-- Use clear, professional English and imperative verbs in bullets.
-- Do not execute Git commands, modify files, or create commits. Only rewrite the supplied message.
-- If no commit description is supplied, ask the user to provide it.
+1. Follow Conventional Commits format:
+   - `feat:` New functionality
+   - `fix:` Bug fixes
+   - `refactor:` Code restructuring
+   - `chore:` Maintenance tasks
+   - `docs:` Documentation changes
+   - `perf:` Performance improvements
 
-## Output
+2. Keep the title short and descriptive, preferably under 72 characters.
 
-Return only the rewritten commit message in a fenced code block.
+3. Use imperative verbs in the title, such as:
+   - add
+   - implement
+   - enhance
+   - improve
+   - refactor
+   - update
+
+4. Summarize the changes into 3–5 concise bullet points when appropriate.
+
+5. Group related changes together instead of listing every modified file or component.
+
+6. Preserve important functionality, business logic, and technical changes.
+
+7. Avoid unnecessary implementation details unless they are significant.
+
+8. Do not invent features or changes not mentioned in the input.
+
+9. Keep existing scopes where appropriate, such as `feat(assessment-history):`.
+
+10. Use clear, professional English.
+
+11. Do not execute Git commands, modify files, or create commits. Only rewrite the message.
+
+## Output Format
+
+Return only the rewritten commit message in a code block.
 
 Example:
 
-```text
 feat: enhance pending transfer management
 
 - Add transfer acknowledgement and validation
-- Improve supervisor assignment
+- Improve supervisor assignment workflow
 - Add transfer history and audit logging
-- Update API, UI, and translations
-```
+- Update API, UI, and localization
+
+## Additional Guidelines
+
+- For simple changes, use fewer bullet points.
+- Avoid repeating the commit title in the bullet points.
+- Prefer "Add" instead of "Added".
+- Prefer "Update" instead of "Updated".
+- Avoid listing class names unless essential.
+- Combine API, store, and frontend changes when they serve the same functionality.
+- Preserve the original meaning.
